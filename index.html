@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mizbah Gazi | Customised Gifts</title>
+    <style>
+        :root {
+            --soft-pink: #ff85a2;
+            --gold: #d4a373;
+            --bg: #fffafb;
+        }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background: var(--bg); color: #333; }
+        
+        /* Header */
+        header { background: white; text-align: center; padding: 30px 15px; border-bottom: 3px solid var(--soft-pink); }
+        .logo { width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 3px solid var(--soft-pink); }
+        h1 { margin: 10px 0 5px; color: var(--soft-pink); letter-spacing: 1px; }
+        .bio { font-size: 0.9rem; color: #666; max-width: 500px; margin: 0 auto; line-height: 1.4; }
+
+        /* Gallery Sections */
+        .container { max-width: 1000px; margin: 20px auto; padding: 0 15px; }
+        h2 { border-left: 5px solid var(--gold); padding-left: 10px; margin-top: 40px; color: #444; font-size: 1.4rem; }
+        
+        .scroll-gallery { 
+            display: flex; 
+            overflow-x: auto; 
+            gap: 15px; 
+            padding: 10px 0;
+            scrollbar-width: thin;
+        }
+        .scroll-gallery::-webkit-scrollbar { height: 6px; }
+        .scroll-gallery::-webkit-scrollbar-thumb { background: var(--soft-pink); border-radius: 10px; }
+
+        .img-card { 
+            min-width: 200px; 
+            height: 250px; 
+            background: #eee; 
+            border-radius: 12px; 
+            overflow: hidden; 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .img-card img { width: 100%; height: 100%; object-fit: cover; transition: 0.3s; }
+        .img-card img:hover { transform: scale(1.05); }
+
+        /* Order Form */
+        .order-box { background: white; padding: 30px; border-radius: 20px; margin: 40px 0; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border: 1px solid #ffebee; }
+        .policy { background: #fff0f0; color: #d63031; padding: 10px; border-radius: 8px; font-size: 0.85rem; text-align: center; margin-bottom: 20px; border: 1px dashed #ff7675; }
+        
+        label { display: block; margin-bottom: 5px; font-weight: 600; font-size: 0.9rem; }
+        input, select, textarea { width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 10px; font-size: 1rem; box-sizing: border-box; }
+        
+        .btn-whatsapp { background: linear-gradient(135deg, #25D366, #128C7E); color: white; border: none; padding: 18px; width: 100%; border-radius: 10px; font-size: 1.1rem; font-weight: bold; cursor: pointer; box-shadow: 0 5px 15px rgba(37,211,102,0.3); }
+
+        .footer { text-align: center; padding: 40px; color: #999; font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="https://i.ibb.co/pBrVZ2mr/IMG-0526.png" alt="Mizbah Logo" class="logo">
+    <h1>Mizbah Gazi</h1>
+    <p class="bio">📌 Mehndi Artist | Customized Gifts (Mugs, Frames, etc)<br>🧶 Run by Misba Custom Crochet | DM to Order</p>
+</header>
+
+<div class="container">
+    
+    <h2>🧶 Custom Crochet Collection</h2>
+    <div class="scroll-gallery">
+        <div class="img-card"><img src="https://i.ibb.co/sYQfSQF/IMG-0527.png"></div>
+        <div class="img-card"><img src="https://i.ibb.co/84GcMfDL/IMG-0525.png"></div>
+        <div class="img-card"><img src="https://i.ibb.co/pBrVZ2mr/IMG-0526.png"></div>
+        </div>
+
+    <h2>🖼️ Personalised Frames & Mugs</h2>
+    <div class="scroll-gallery">
+        <div class="img-card"><img src="https://i.ibb.co/pBrVZ2mr/IMG-0526.png"></div>
+        <div class="img-card"><img src="https://i.ibb.co/sYQfSQF/IMG-0527.png"></div>
+        <div class="img-card"><img src="https://i.ibb.co/84GcMfDL/IMG-0525.png"></div>
+    </div>
+
+    <h2>📌 Mehndi Designs</h2>
+    <div class="scroll-gallery">
+        <div class="img-card"><img src="https://i.ibb.co/sYQfSQF/IMG-0527.png"></div>
+        <div class="img-card"><img src="https://i.ibb.co/84GcMfDL/IMG-0525.png"></div>
+    </div>
+
+    <div class="order-box">
+        <h2>🛍️ Place Your Order</h2>
+        <div class="policy">⚠️ <b>Important:</b> No Exchange | No Return Policy</div>
+        
+        <form id="orderForm">
+            <label>Your Full Name</label>
+            <input type="text" id="cust_name" placeholder="Enter your name" required>
+
+            <label>What do you want to buy?</label>
+            <select id="cust_product" required>
+                <option value="">Select Category</option>
+                <option value="Crochet Item">Custom Crochet</option>
+                <option value="Custom Frame">Personalised Frame</option>
+                <option value="Custom Mug">Customised Mug</option>
+                <option value="Mehndi Booking">Mehndi Booking</option>
+            </select>
+
+            <label>Full Delivery Address</label>
+            <textarea id="cust_address" rows="3" placeholder="Street, City, Pincode" required></textarea>
+
+            <label>Payment Mode</label>
+            <input type="text" value="Cash on Delivery (COD)" readonly style="background:#f9f9f9; color:#888;">
+
+            <button type="button" class="btn-whatsapp" onclick="orderNow()">
+                Place Order via WhatsApp ➔
+            </button>
+        </form>
+    </div>
+</div>
+
+<div class="footer">
+    <p>Run by Misba | Contact: 9103803607</p>
+    <p>© 2026 Customised Gifts. All Rights Reserved.</p>
+</div>
+
+<script>
+    function orderNow() {
+        const phone = "919103803607";
+        const name = document.getElementById('cust_name').value;
+        const product = document.getElementById('cust_product').value;
+        const address = document.getElementById('cust_address').value;
+
+        if(!name || !product || !address) {
+            alert("Please fill all details before ordering!");
+            return;
+        }
+
+        const msg = `*NEW ORDER FROM WEBSITE*%0A%0A` +
+                    `*Name:* ${name}%0A` +
+                    `*Product:* ${product}%0A` +
+                    `*Address:* ${address}%0A` +
+                    `*Payment:* COD%0A%0A` +
+                    `Please confirm this order.`;
+
+        window.open(`https://wa.me/${phone}?text=${msg}`, '_blank');
+    }
+</script>
+
+</body>
+</html>

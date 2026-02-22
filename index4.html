@@ -18,9 +18,8 @@
         .bio { font-size: 1rem; color: #555; max-width: 600px; margin: 0 auto; line-height: 1.6; }
 
         .container { max-width: 1200px; margin: 20px auto; padding: 0 15px; }
-        h2 { border-left: 6px solid var(--soft-gold); padding-left: 15px; margin-top: 50px; color: #444; font-size: 1.6rem; text-transform: uppercase; }
+        h2 { border-left: 6px solid var(--soft-gold); padding-left: 15px; margin-top: 50px; color: #444; font-size: 1.6rem; text-transform: uppercase; letter-spacing: 1px; }
         
-        /* Image Grid */
         .gallery-grid { 
             display: grid; 
             grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); 
@@ -33,19 +32,18 @@
             border-radius: 12px; 
             overflow: hidden; 
             box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-            transition: transform 0.3s ease;
+            transition: 0.3s ease;
         }
         .img-card img { width: 100%; height: 100%; object-fit: cover; }
         .img-card:hover { transform: translateY(-5px); }
 
-        /* Order Form */
         .order-box { background: white; padding: 40px; border-radius: 25px; margin: 60px 0; box-shadow: 0 15px 40px rgba(0,0,0,0.05); border: 1px solid #ffebee; }
         .policy-tag { background: #fff0f0; color: #d63031; padding: 15px; border-radius: 10px; font-size: 1rem; text-align: center; margin-bottom: 30px; border: 2px dashed #ff7675; font-weight: bold; }
         
         label { display: block; margin-bottom: 8px; font-weight: 600; color: #555; }
         input, select, textarea { width: 100%; padding: 14px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 12px; font-size: 1rem; box-sizing: border-box; }
         
-        .btn-whatsapp { background: linear-gradient(135deg, #25D366, #128C7E); color: white; border: none; padding: 20px; width: 100%; border-radius: 12px; font-size: 1.2rem; font-weight: bold; cursor: pointer; box-shadow: 0 8px 20px rgba(37,211,102,0.3); transition: 0.3s; }
+        .btn-whatsapp { background: linear-gradient(135deg, #25D366, #128C7E); color: white; border: none; padding: 20px; width: 100%; border-radius: 12px; font-size: 1.2rem; font-weight: bold; cursor: pointer; transition: 0.3s; }
         .btn-whatsapp:hover { opacity: 0.9; transform: scale(1.01); }
 
         .footer { text-align: center; padding: 50px 20px; color: #888; border-top: 1px solid #eee; font-size: 0.9rem; }
@@ -56,12 +54,18 @@
 <header>
     <img src="https://i.ibb.co/4ZcsCcMf/IMG-0526.png" alt="Mizbah Logo" class="logo">
     <h1>Mizbah Gazi</h1>
-    <p class="bio">📍 Mehndi Artist | Customized Gifts (Mugs, Frames, etc) | Custom Crochet<br>✨ <b>Everything Personalised Just For You</b> ✨</p>
+    <p class="bio">
+        📌 mehndi artist (dm for booking)<br>
+        customized gifts (mugs, frames, etc)<br>
+        Run by misba Custom crochet | DM to order
+    </p>
 </header>
 
 <div class="container">
     
-    <h2>🧶 Custom Crochet & Handmade Items</h2>
+    <div class="policy-tag">⚠️ NO EXCHANGE NO RETURN</div>
+
+    <h2>🧶 Custom Crochet Collection</h2>
     <div class="gallery-grid">
         <div class="img-card"><img src="https://i.ibb.co/354gSDpJ/IMG-0527.png"></div>
         <div class="img-card"><img src="https://i.ibb.co/4ZcsCcMf/IMG-0526.png"></div>
@@ -78,11 +82,11 @@
         <div class="img-card"><img src="https://i.ibb.co/chRgy1CY/IMG-0019.jpg"></div>
         <div class="img-card"><img src="https://i.ibb.co/fYR7Xny5/IMG-0023.png"></div>
         <div class="img-card"><img src="https://i.ibb.co/nM6g0wtf/IMG-0026.png"></div>
+        <div class="img-card"><img src="https://i.ibb.co/yF8PRJMb/IMG-0051.png"></div>
         <div class="img-card"><img src="https://i.ibb.co/6JZvXxLJ/IMG-0056.png"></div>
-        <div class="img-card"><img src="https://i.ibb.co/HL2nYyyr/IMG-0057.png"></div>
         <div class="img-card"><img src="https://i.ibb.co/WN1SZx9L/IMG-0058.png"></div>
+        <div class="img-card"><img src="https://i.ibb.co/HL2nYyyr/IMG-0057.png"></div>
         <div class="img-card"><img src="https://i.ibb.co/39cKZ7VX/IMG-0067.png"></div>
-        <div class="img-card"><img src="https://i.ibb.co/0VZfCGWh/IMG-0069.png"></div>
     </div>
 
     <h2>✨ Mehndi Designs & Jewellery</h2>
@@ -90,37 +94,34 @@
         <div class="img-card"><img src="https://i.ibb.co/jkPdNmV0/IMG-0084.png"></div>
         <div class="img-card"><img src="https://i.ibb.co/mVjzmR9Y/IMG-0087.png"></div>
         <div class="img-card"><img src="https://i.ibb.co/6JpM5Sss/IMG-0088.png"></div>
-        <div class="img-card"><img src="https://i.ibb.co/GqLxNKs/IMG-0090.png"></div>
         <div class="img-card"><img src="https://i.ibb.co/9m03TXKh/IMG-0092.png"></div>
+        <div class="img-card"><img src="https://i.ibb.co/GqLxNKs/IMG-0090.png"></div>
         <div class="img-card"><img src="https://i.ibb.co/Tq2bGn1d/IMG-0104.png"></div>
         <div class="img-card"><img src="https://i.ibb.co/XxqQPPjF/IMG-0505.jpg"></div>
         <div class="img-card"><img src="https://i.ibb.co/BHxdtWpW/IMG-0216.jpg"></div>
     </div>
 
-    <div class="order-box" id="order-section">
-        <div class="policy-tag">📌 NO EXCHANGE | NO RETURN POLICY</div>
-        <h2 style="border:none; text-align:center; margin-bottom:30px;">🛍️ Apna Order Confirm Karein</h2>
-        
+    <div class="order-box">
+        <h2 style="border:none; text-align:center; margin-bottom:30px;">🛍️ Order Details Fill Karein</h2>
         <form id="whatsappForm">
             <label>Full Name</label>
             <input type="text" id="cust_name" placeholder="Enter your name" required>
 
-            <label>Select Category</label>
+            <label>Product Category</label>
             <select id="cust_product" required>
-                <option value="">-- Item Select Karein --</option>
-                <option value="Custom Crochet">Custom Crochet</option>
-                <option value="Customised Frame">Personalised Frame</option>
-                <option value="Customised Mug">Customised Mug</option>
-                <option value="Mehndi Booking">Mehndi Artist Booking</option>
+                <option value="Crochet">Custom Crochet</option>
+                <option value="Frame">Personalised Frame</option>
+                <option value="Mug">Customised Mug</option>
+                <option value="Mehndi">Mehndi Booking</option>
             </select>
 
-            <label>Full Delivery Address</label>
+            <label>Complete Address</label>
             <textarea id="cust_address" rows="4" placeholder="House No, Area, City, Pincode" required></textarea>
 
             <p><strong>Payment Mode:</strong> Cash on Delivery (COD) ✅</p>
 
             <button type="button" class="btn-whatsapp" onclick="sendOrder()">
-                WhatsApp Par Details Bhejein ➔
+                WhatsApp Par Order Bhejein ➔
             </button>
         </form>
     </div>
@@ -138,17 +139,14 @@
         const product = document.getElementById('cust_product').value;
         const address = document.getElementById('cust_address').value;
 
-        if(!name || !product || !address) {
-            alert("Meharbani karke saari details bharein!");
-            return;
-        }
+        if(!name || !address) { alert("Details fill karein!"); return; }
 
         const message = `*NEW WEBSITE ORDER*%0A%0A` +
                         `*Name:* ${name}%0A` +
                         `*Product:* ${product}%0A` +
                         `*Address:* ${address}%0A` +
-                        `*Payment:* Cash on Delivery%0A%0A` +
-                        `_I accept the No Exchange/No Return Policy._`;
+                        `*Payment:* COD%0A%0A` +
+                        `_I accept the No Exchange/Return Policy._`;
 
         window.open(`https://wa.me/${phone}?text=${message}`, '_blank');
     }

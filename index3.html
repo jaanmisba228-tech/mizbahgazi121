@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mizbah Gazi | Customised Gifts</title>
+    <style>
+        :root {
+            --primary-pink: #ff85a2;
+            --soft-gold: #d4a373;
+            --bg-color: #fffafb;
+        }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background: var(--bg-color); color: #333; }
+        
+        header { background: white; text-align: center; padding: 40px 20px; border-bottom: 4px solid var(--primary-pink); }
+        .logo { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 3px solid var(--primary-pink); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        h1 { margin: 15px 0 5px; color: var(--primary-pink); font-size: 2rem; }
+        .bio { font-size: 1rem; color: #555; max-width: 600px; margin: 0 auto; line-height: 1.5; }
+
+        .container { max-width: 1100px; margin: 20px auto; padding: 0 15px; }
+        h2 { border-left: 6px solid var(--soft-gold); padding-left: 15px; margin-top: 50px; color: #444; font-size: 1.5rem; }
+        
+        .gallery-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); 
+            gap: 15px; 
+            margin-top: 20px;
+        }
+
+        .img-card { 
+            aspect-ratio: 1 / 1; 
+            background: #eee; 
+            border-radius: 12px; 
+            overflow: hidden; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .img-card img { width: 100%; height: 100%; object-fit: cover; transition: 0.3s; }
+        .img-card:hover img { transform: scale(1.05); }
+
+        /* Order Box */
+        .order-box { background: white; padding: 40px; border-radius: 25px; margin: 60px 0; box-shadow: 0 15px 40px rgba(0,0,0,0.05); border: 1px solid #ffebee; }
+        .policy-tag { background: #fff0f0; color: #d63031; padding: 12px; border-radius: 10px; font-size: 0.9rem; text-align: center; margin-bottom: 25px; border: 1px dashed #ff7675; font-weight: bold; }
+        
+        label { display: block; margin-bottom: 8px; font-weight: 600; }
+        input, select, textarea { width: 100%; padding: 14px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 12px; font-size: 1rem; box-sizing: border-box; }
+        
+        .btn-whatsapp { background: linear-gradient(135deg, #25D366, #128C7E); color: white; border: none; padding: 20px; width: 100%; border-radius: 12px; font-size: 1.2rem; font-weight: bold; cursor: pointer; transition: 0.3s; }
+        .btn-whatsapp:hover { transform: translateY(-3px); }
+
+        .footer { text-align: center; padding: 50px 20px; color: #888; border-top: 1px solid #eee; }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="https://i.ibb.co/pBrVZ2mr/IMG-0526.png" alt="Logo" class="logo">
+    <h1>Mizbah Gazi</h1>
+    <p class="bio">📍 Mehndi Artist | Customized Gifts | Custom Crochet<br>Order Customised Items via WhatsApp Below</p>
+</header>
+
+<div class="container">
+    
+    <h2>🧶 My Collection</h2>
+    <div class="gallery-grid">
+        <div class="img-card"><img src="https://i.ibb.co/pBrVZ2mr/IMG-0526.png"></div>
+        <div class="img-card"><img src="https://i.ibb.co/sYQfSQF/IMG-0527.png"></div>
+        <div class="img-card"><img src="https://i.ibb.co/84GcMfDL/IMG-0525.png"></div>
+        <div class="img-card"><img src="https://i.ibb.co/pBrVZ2mr/IMG-0526.png"></div>
+        <div class="img-card"><img src="https://i.ibb.co/sYQfSQF/IMG-0527.png"></div>
+        <div class="img-card"><img src="https://i.ibb.co/84GcMfDL/IMG-0525.png"></div>
+    </div>
+
+    <div class="order-box">
+        <div class="policy-tag">📌 No Exchange | No Return Policy</div>
+        <h2 style="border:none; text-align:center; margin-top:0;">🛍️ Place Your Order</h2>
+        
+        <form>
+            <label>Your Name</label>
+            <input type="text" id="cust_name" placeholder="Enter your name" required>
+
+            <label>Select Category</label>
+            <select id="cust_product">
+                <option value="Crochet">Custom Crochet</option>
+                <option value="Frame">Personalised Frame</option>
+                <option value="Mug">Custom Mug</option>
+                <option value="Mehndi">Mehndi Booking</option>
+            </select>
+
+            <label>Delivery Address</label>
+            <textarea id="cust_address" rows="3" placeholder="Full Address with Pincode" required></textarea>
+
+            <label>Payment Method</label>
+            <input type="text" value="Cash on Delivery (COD)" readonly style="background:#f9f9f9;">
+
+            <button type="button" class="btn-whatsapp" onclick="sendToWA()">
+                Order on WhatsApp ➔
+            </button>
+        </form>
+    </div>
+</div>
+
+<div class="footer">
+    <p>Contact: +91 9103803607</p>
+    <p>© 2026 Mizbah Gazi. All Rights Reserved.</p>
+</div>
+
+<script>
+    function sendToWA() {
+        const phone = "919103803607";
+        const name = document.getElementById('cust_name').value;
+        const prod = document.getElementById('cust_product').value;
+        const addr = document.getElementById('cust_address').value;
+
+        if(!name || !addr) { alert("Please fill details!"); return; }
+
+        const msg = `*NEW ORDER*%0A*Name:* ${name}%0A*Product:* ${prod}%0A*Address:* ${addr}%0A*Payment:* COD`;
+        window.open(`https://wa.me/${phone}?text=${msg}`, '_blank');
+    }
+</script>
+
+</body>
+</html>

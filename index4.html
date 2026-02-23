@@ -3,43 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mizbah Gazi | Customised Gifts & Mehndi</title>
+    <title>Mizbah Gazi | Official Store</title>
     <style>
         :root {
-            --primary-pink: #ff85a2;
-            --soft-gold: #d4a373;
-            --bg-color: #fffafb;
+            --pink: #ff85a2;
+            --gold: #d4a373;
+            --bg: #fffafb;
         }
-        body { font-family: 'Segoe UI', sans-serif; margin: 0; background: var(--bg-color); color: #333; }
-        header { background: white; text-align: center; padding: 40px 20px; border-bottom: 4px solid var(--primary-pink); }
-        .logo { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 3px solid var(--primary-pink); }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background: var(--bg); color: #333; }
+        header { background: white; text-align: center; padding: 40px 20px; border-bottom: 4px solid var(--pink); }
+        .logo { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 3px solid var(--pink); box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        h1 { margin: 15px 0 5px; color: var(--pink); letter-spacing: 1px; }
         
-        .container { max-width: 1200px; margin: 20px auto; padding: 0 15px; }
-        h2 { border-left: 6px solid var(--soft-gold); padding-left: 15px; margin-top: 40px; color: #444; }
+        .container { max-width: 1200px; margin: 20px auto; padding: 0 20px; }
+        h2 { border-left: 5px solid var(--gold); padding-left: 15px; margin-top: 50px; color: #444; text-transform: uppercase; font-size: 1.4rem; }
         
         .gallery-grid { 
             display: grid; 
             grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); 
-            gap: 15px; 
+            gap: 20px; 
             margin-top: 20px;
         }
         .img-card { 
             aspect-ratio: 1 / 1; 
-            background: #fff; 
+            background: white; 
             border-radius: 15px; 
             overflow: hidden; 
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: 0.3s;
         }
         .img-card img { 
             width: 100%; height: 100%; object-fit: cover; 
-            display: block;
+            display: block; transition: 0.3s;
         }
+        .img-card:hover img { transform: scale(1.08); }
 
-        .order-box { background: white; padding: 30px; border-radius: 20px; margin: 50px 0; border: 1px solid #ffebee; }
-        .policy { color: #d63031; text-align: center; font-weight: bold; margin-bottom: 20px; border: 2px dashed var(--primary-pink); padding: 10px; }
+        .order-box { background: white; padding: 40px; border-radius: 25px; margin: 60px 0; border: 1px solid #ffebee; text-align: center; }
+        .policy { color: #d63031; font-weight: bold; margin-bottom: 25px; border: 2px dashed var(--pink); padding: 15px; border-radius: 10px; display: inline-block; }
         
-        input, select, textarea { width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 10px; box-sizing: border-box; }
-        .btn-whatsapp { background: #25D366; color: white; border: none; padding: 18px; width: 100%; border-radius: 10px; font-size: 1.2rem; font-weight: bold; cursor: pointer; }
+        input, select, textarea { width: 100%; padding: 14px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 12px; font-size: 1rem; box-sizing: border-box; }
+        .btn-whatsapp { background: #25D366; color: white; border: none; padding: 20px; width: 100%; border-radius: 12px; font-size: 1.2rem; font-weight: bold; cursor: pointer; transition: 0.3s; }
+        .btn-whatsapp:hover { background: #128C7E; transform: translateY(-2px); }
+        .footer { padding: 40px; text-align: center; color: #888; font-size: 0.9rem; }
     </style>
 </head>
 <body>
@@ -51,7 +56,7 @@
 </header>
 
 <div class="container">
-    <div class="policy">⚠️ NO EXCHANGE NO RETURN POLICY</div>
+    <div style="text-align: center;"><div class="policy">📌 NO EXCHANGE NO RETURN POLICY</div></div>
 
     <h2>🧶 Custom Crochet & Handmade</h2>
     <div class="gallery-grid">
@@ -60,14 +65,8 @@
         <div class="img-card"><img src="https://i.ibb.co/qY6YrfKg/IMG-0528.png" crossorigin="anonymous" referrerpolicy="no-referrer"></div>
         <div class="img-card"><img src="https://i.ibb.co/Wvjvy7wZ/IMG-0525.png" crossorigin="anonymous" referrerpolicy="no-referrer"></div>
         <div class="img-card"><img src="https://i.ibb.co/bgRVfrsc/IMG-0012.png" crossorigin="anonymous" referrerpolicy="no-referrer"></div>
-    </div>
-
-    <h2>🖼️ Personalized Frames</h2>
-    <div class="gallery-grid">
-        <div class="img-card"><img src="https://i.ibb.co/DPGMLbQB/48-F5-BFC6-A1-FE-4-B3-B-AD83-FD1-B8-C8-FAAF3.jpg" crossorigin="anonymous" referrerpolicy="no-referrer"></div>
-        <div class="img-card"><img src="https://i.ibb.co/Pvd3vsMb/IMG-0216.jpg" crossorigin="anonymous" referrerpolicy="no-referrer"></div>
-        <div class="img-card"><img src="https://i.ibb.co/ymtcnN83/IMG-0215.jpg" crossorigin="anonymous" referrerpolicy="no-referrer"></div>
-        <div class="img-card"><img src="https://i.ibb.co/WWN8bRGr/181-E60-BF-77-DD-41-E1-A412-B122-E1-F6553-F.jpg" crossorigin="anonymous" referrerpolicy="no-referrer"></div>
+        <div class="img-card"><img src="https://i.ibb.co/nM2f9fz1/IMG-0011.png" crossorigin="anonymous" referrerpolicy="no-referrer"></div>
+        <div class="img-card"><img src="https://i.ibb.co/GfJpwq5M/IMG-0010.png" crossorigin="anonymous" referrerpolicy="no-referrer"></div>
     </div>
 
     <h2>💍 Jewellery & Accessories</h2>
@@ -77,39 +76,63 @@
         <div class="img-card"><img src="https://i.ibb.co/99GgRGXz/IMG-0016.png" crossorigin="anonymous" referrerpolicy="no-referrer"></div>
         <div class="img-card"><img src="https://i.ibb.co/Q3FphZ3t/IMG-0013.png" crossorigin="anonymous" referrerpolicy="no-referrer"></div>
         <div class="img-card"><img src="https://i.ibb.co/hRnZwGVf/IMG-0017.png" crossorigin="anonymous" referrerpolicy="no-referrer"></div>
+        <div class="img-card"><img src="https://i.ibb.co/Fb7YdrRk/IMG-0076.png" crossorigin="anonymous" referrerpolicy="no-referrer"></div>
     </div>
 
-    <h2>✨ Mehndi Designs</h2>
+    <h2>🖼️ Personalised Photo Frames</h2>
     <div class="gallery-grid">
-        <div class="img-card"><img src="https://i.ibb.co/Fb7YdrRk/IMG-0076.png" crossorigin="anonymous" referrerpolicy="no-referrer"></div>
+        <div class="img-card"><img src="https://i.ibb.co/Pvd3vsMb/IMG-0216.jpg" crossorigin="anonymous" referrerpolicy="no-referrer"></div>
+        <div class="img-card"><img src="https://i.ibb.co/ymtcnN83/IMG-0215.jpg" crossorigin="anonymous" referrerpolicy="no-referrer"></div>
+        <div class="img-card"><img src="https://i.ibb.co/DPGMLbQB/48-F5-BFC6-A1-FE-4-B3-B-AD83-FD1-B8-C8-FAAF3.jpg" crossorigin="anonymous" referrerpolicy="no-referrer"></div>
+        <div class="img-card"><img src="https://i.ibb.co/WWN8bRGr/181-E60-BF-77-DD-41-E1-A412-B122-E1-F6553-F.jpg" crossorigin="anonymous" referrerpolicy="no-referrer"></div>
+        <div class="img-card"><img src="https://i.ibb.co/dsxHqLTv/IMG-0223.jpg" crossorigin="anonymous" referrerpolicy="no-referrer"></div>
+        <div class="img-card"><img src="https://i.ibb.co/RG1jZxxN/IMG-0125.png" crossorigin="anonymous" referrerpolicy="no-referrer"></div>
+    </div>
+
+    <h2>✨ Mehndi Designs & Arts</h2>
+    <div class="gallery-grid">
         <div class="img-card"><img src="https://i.ibb.co/Fbh9Wf9K/IMG-0077.png" crossorigin="anonymous" referrerpolicy="no-referrer"></div>
-        <div class="img-card"><img src="https://i.ibb.co/Kxq6RVDL/IMG-0078.png" crossorigin="anonymous" referrerpolicy="no-referrer"></div>
         <div class="img-card"><img src="https://i.ibb.co/yvwGLzX/IMG-0079.png" crossorigin="anonymous" referrerpolicy="no-referrer"></div>
+        <div class="img-card"><img src="https://i.ibb.co/Kxq6RVDL/IMG-0078.png" crossorigin="anonymous" referrerpolicy="no-referrer"></div>
+        <div class="img-card"><img src="https://i.ibb.co/xqxpcsVT/DE207688-4-B0-A-4150-89-CC-9-E5-F975-CB39-E.jpg" crossorigin="anonymous" referrerpolicy="no-referrer"></div>
+        <div class="img-card"><img src="https://i.ibb.co/99ywmN2C/IMG-0092.png" crossorigin="anonymous" referrerpolicy="no-referrer"></div>
+        <div class="img-card"><img src="https://i.ibb.co/CKv10zwP/IMG-0105.png" crossorigin="anonymous" referrerpolicy="no-referrer"></div>
     </div>
 
     <div class="order-box">
-        <h2 style="border:none; text-align:center;">🛒 Place Your Order</h2>
+        <h2 style="border: none; margin-top: 0;">🛍️ Order Via WhatsApp</h2>
+        <p>Apni details bharein aur humse WhatsApp par judein</p>
         <form id="orderForm">
-            <input type="text" id="name" placeholder="Full Name" required>
-            <select id="prod">
-                <option value="Crochet">Crochet Item</option>
-                <option value="Frame">Personalized Frame</option>
+            <input type="text" id="custName" placeholder="Aapka Naam" required>
+            <select id="custProduct">
+                <option value="Crochet">Custom Crochet</option>
+                <option value="Frame">Personalised Frame</option>
                 <option value="Mehndi">Mehndi Booking</option>
+                <option value="Jewellery">Jewellery</option>
             </select>
-            <textarea id="addr" placeholder="Full Address" required></textarea>
-            <button type="button" class="btn-whatsapp" onclick="sendToWA()">Send Order to WhatsApp</button>
+            <textarea id="custAddr" rows="4" placeholder="Full Address & Pincode" required></textarea>
+            <button type="button" class="btn-whatsapp" onclick="sendToWA()">Send Order on WhatsApp ➔</button>
         </form>
     </div>
 </div>
 
+<div class="footer">
+    <p>Handmade with Love by Mizbah Gazi | +91 9103803607</p>
+</div>
+
 <script>
     function sendToWA() {
+        const name = document.getElementById('custName').value;
+        const prod = document.getElementById('custProduct').value;
+        const addr = document.getElementById('custAddr').value;
         const phone = "919103803607";
-        const msg = `Order: ${document.getElementById('prod').value}%0AName: ${document.getElementById('name').value}%0AAddress: ${document.getElementById('addr').value}`;
-        window.open(`https://wa.me/${phone}?text=${msg}`, '_blank');
+
+        if(!name || !addr) { alert("Meharbani karke details bharein!"); return; }
+
+        const message = `*NEW ORDER*%0A*Name:* ${name}%0A*Product:* ${prod}%0A*Address:* ${addr}%0A%0A_I accept No Exchange/Return policy._`;
+        window.open(`https://wa.me/${phone}?text=${message}`, '_blank');
     }
 </script>
 
 </body>
 </html>
-

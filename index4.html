@@ -10,128 +10,103 @@
             --soft-gold: #d4a373;
             --bg-color: #fffafb;
         }
-        body { font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; background: var(--bg-color); color: #333; }
-        
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background: var(--bg-color); color: #333; }
         header { background: white; text-align: center; padding: 40px 20px; border-bottom: 4px solid var(--primary-pink); }
-        .logo { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 3px solid var(--primary-pink); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
-        h1 { margin: 15px 0 5px; color: var(--primary-pink); font-size: 2.2rem; }
-        .bio { font-size: 1rem; color: #555; max-width: 600px; margin: 0 auto; line-height: 1.6; }
-
+        .logo { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 3px solid var(--primary-pink); }
+        
         .container { max-width: 1200px; margin: 20px auto; padding: 0 15px; }
-        h2 { border-left: 6px solid var(--soft-gold); padding-left: 15px; margin-top: 50px; color: #444; font-size: 1.6rem; text-transform: uppercase; }
+        h2 { border-left: 6px solid var(--soft-gold); padding-left: 15px; margin-top: 40px; color: #444; }
         
         .gallery-grid { 
             display: grid; 
-            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); 
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); 
             gap: 15px; 
-            margin-top: 25px;
+            margin-top: 20px;
         }
         .img-card { 
             aspect-ratio: 1 / 1; 
             background: #fff; 
-            border-radius: 12px; 
+            border-radius: 15px; 
             overflow: hidden; 
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-            transition: 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
         .img-card img { 
-            width: 100%; 
-            height: 100%; 
-            object-fit: cover; 
+            width: 100%; height: 100%; object-fit: cover; 
             display: block;
         }
-        .img-card:hover { transform: translateY(-5px); }
 
-        .order-box { background: white; padding: 40px; border-radius: 25px; margin: 60px 0; box-shadow: 0 15px 40px rgba(0,0,0,0.05); border: 1px solid #ffebee; }
-        .policy-tag { background: #fff0f0; color: #d63031; padding: 15px; border-radius: 10px; font-size: 1rem; text-align: center; margin-bottom: 30px; border: 2px dashed #ff7675; font-weight: bold; }
+        .order-box { background: white; padding: 30px; border-radius: 20px; margin: 50px 0; border: 1px solid #ffebee; }
+        .policy { color: #d63031; text-align: center; font-weight: bold; margin-bottom: 20px; border: 2px dashed var(--primary-pink); padding: 10px; }
         
-        label { display: block; margin-bottom: 8px; font-weight: 600; color: #555; }
-        input, select, textarea { width: 100%; padding: 14px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 12px; font-size: 1rem; box-sizing: border-box; }
-        
-        .btn-whatsapp { background: linear-gradient(135deg, #25D366, #128C7E); color: white; border: none; padding: 20px; width: 100%; border-radius: 12px; font-size: 1.2rem; font-weight: bold; cursor: pointer; transition: 0.3s; }
-        .btn-whatsapp:hover { opacity: 0.9; transform: scale(1.01); }
-
-        .footer { text-align: center; padding: 50px 20px; color: #888; border-top: 1px solid #eee; font-size: 0.9rem; }
+        input, select, textarea { width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 10px; box-sizing: border-box; }
+        .btn-whatsapp { background: #25D366; color: white; border: none; padding: 18px; width: 100%; border-radius: 10px; font-size: 1.2rem; font-weight: bold; cursor: pointer; }
     </style>
 </head>
 <body>
 
 <header>
-    <img src="https://i.ibb.co/v2ZTCwZ/IMG-0012.png" 
-         crossorigin="anonymous" 
-         referrerpolicy="no-referrer" 
-         class="logo" alt="Logo">
+    <img src="https://i.ibb.co/N29n0sFr/IMG-0526.png" class="logo" crossorigin="anonymous" referrerpolicy="no-referrer">
     <h1>Mizbah Gazi</h1>
-    <p class="bio">
-        📌 Mehndi Artist | Customized Gifts | Custom Crochet<br>
-        <i>Exclusive designs for your special moments</i>
-    </p>
+    <p>Mehndi Artist | Customised Gifts | Custom Crochet</p>
 </header>
 
 <div class="container">
-    
-    <div class="policy-tag">⚠️ NO EXCHANGE NO RETURN POLICY</div>
+    <div class="policy">⚠️ NO EXCHANGE NO RETURN POLICY</div>
 
-    <h2>🧶 Crochet & Handmade Designs</h2>
+    <h2>🧶 Custom Crochet & Handmade</h2>
     <div class="gallery-grid">
-        <div class="img-card"><img src="https://i.ibb.co/v2ZTCwZ/IMG-0012.png" crossorigin="anonymous" referrerpolicy="no-referrer"></div>
-        <div class="img-card"><img src="https://i.ibb.co/JjNN9rmv/IMG-0478.jpg" crossorigin="anonymous" referrerpolicy="no-referrer"></div>
-        <div class="img-card"><img src="https://i.ibb.co/XxqQPPjF/IMG-0505.jpg" crossorigin="anonymous" referrerpolicy="no-referrer"></div>
+        <div class="img-card"><img src="https://i.ibb.co/N29n0sFr/IMG-0526.png" crossorigin="anonymous" referrerpolicy="no-referrer"></div>
+        <div class="img-card"><img src="https://i.ibb.co/d0TD4d9t/IMG-0527.png" crossorigin="anonymous" referrerpolicy="no-referrer"></div>
+        <div class="img-card"><img src="https://i.ibb.co/qY6YrfKg/IMG-0528.png" crossorigin="anonymous" referrerpolicy="no-referrer"></div>
+        <div class="img-card"><img src="https://i.ibb.co/Wvjvy7wZ/IMG-0525.png" crossorigin="anonymous" referrerpolicy="no-referrer"></div>
+        <div class="img-card"><img src="https://i.ibb.co/bgRVfrsc/IMG-0012.png" crossorigin="anonymous" referrerpolicy="no-referrer"></div>
     </div>
 
-    <h2>🖼️ Personalised Frames</h2>
+    <h2>🖼️ Personalized Frames</h2>
     <div class="gallery-grid">
-        <div class="img-card"><img src="https://i.ibb.co/BHxdtWpW/IMG-0216.jpg" crossorigin="anonymous" referrerpolicy="no-referrer"></div>
-        <div class="img-card"><img src="https://i.ibb.co/chSY85fc/BE4492-E3-FB87-4751-9-C8-C-EAD916-AB7-CE3.jpg" crossorigin="anonymous" referrerpolicy="no-referrer"></div>
-        <div class="img-card"><img src="https://i.ibb.co/9mYhfbRL/48-F5-BFC6-A1-FE-4-B3-B-AD83-FD1-B8-C8-FAAF3.jpg" crossorigin="anonymous" referrerpolicy="no-referrer"></div>
+        <div class="img-card"><img src="https://i.ibb.co/DPGMLbQB/48-F5-BFC6-A1-FE-4-B3-B-AD83-FD1-B8-C8-FAAF3.jpg" crossorigin="anonymous" referrerpolicy="no-referrer"></div>
+        <div class="img-card"><img src="https://i.ibb.co/Pvd3vsMb/IMG-0216.jpg" crossorigin="anonymous" referrerpolicy="no-referrer"></div>
+        <div class="img-card"><img src="https://i.ibb.co/ymtcnN83/IMG-0215.jpg" crossorigin="anonymous" referrerpolicy="no-referrer"></div>
+        <div class="img-card"><img src="https://i.ibb.co/WWN8bRGr/181-E60-BF-77-DD-41-E1-A412-B122-E1-F6553-F.jpg" crossorigin="anonymous" referrerpolicy="no-referrer"></div>
     </div>
 
-    <h2>💍 Jewellery Collection</h2>
+    <h2>💍 Jewellery & Accessories</h2>
     <div class="gallery-grid">
-        <div class="img-card"><img src="https://i.ibb.co/PzY7rDhr/IMG-0014.png" crossorigin="anonymous" referrerpolicy="no-referrer"></div>
-        <div class="img-card"><img src="https://i.ibb.co/V0dn5m5L/IMG-0017.png" crossorigin="anonymous" referrerpolicy="no-referrer"></div>
-        <div class="img-card"><img src="https://i.ibb.co/x8MFwDfS/IMG-0016.png" crossorigin="anonymous" referrerpolicy="no-referrer"></div>
+        <div class="img-card"><img src="https://i.ibb.co/gbRbX3rB/IMG-0015.png" crossorigin="anonymous" referrerpolicy="no-referrer"></div>
+        <div class="img-card"><img src="https://i.ibb.co/1tT3xhwM/IMG-0014.png" crossorigin="anonymous" referrerpolicy="no-referrer"></div>
+        <div class="img-card"><img src="https://i.ibb.co/99GgRGXz/IMG-0016.png" crossorigin="anonymous" referrerpolicy="no-referrer"></div>
+        <div class="img-card"><img src="https://i.ibb.co/Q3FphZ3t/IMG-0013.png" crossorigin="anonymous" referrerpolicy="no-referrer"></div>
+        <div class="img-card"><img src="https://i.ibb.co/hRnZwGVf/IMG-0017.png" crossorigin="anonymous" referrerpolicy="no-referrer"></div>
+    </div>
+
+    <h2>✨ Mehndi Designs</h2>
+    <div class="gallery-grid">
+        <div class="img-card"><img src="https://i.ibb.co/Fb7YdrRk/IMG-0076.png" crossorigin="anonymous" referrerpolicy="no-referrer"></div>
+        <div class="img-card"><img src="https://i.ibb.co/Fbh9Wf9K/IMG-0077.png" crossorigin="anonymous" referrerpolicy="no-referrer"></div>
+        <div class="img-card"><img src="https://i.ibb.co/Kxq6RVDL/IMG-0078.png" crossorigin="anonymous" referrerpolicy="no-referrer"></div>
+        <div class="img-card"><img src="https://i.ibb.co/yvwGLzX/IMG-0079.png" crossorigin="anonymous" referrerpolicy="no-referrer"></div>
     </div>
 
     <div class="order-box">
-        <h2 style="border:none; text-align:center; margin-bottom:30px;">🛍️ Order on WhatsApp</h2>
+        <h2 style="border:none; text-align:center;">🛒 Place Your Order</h2>
         <form id="orderForm">
-            <label>Name</label>
-            <input type="text" id="cust_name" placeholder="Enter your name" required>
-
-            <label>Product</label>
-            <select id="cust_product">
-                <option value="Crochet">Custom Crochet</option>
-                <option value="Frame">Personalised Frame</option>
+            <input type="text" id="name" placeholder="Full Name" required>
+            <select id="prod">
+                <option value="Crochet">Crochet Item</option>
+                <option value="Frame">Personalized Frame</option>
                 <option value="Mehndi">Mehndi Booking</option>
-                <option value="Jewellery">Jewellery</option>
             </select>
-
-            <label>Address</label>
-            <textarea id="cust_address" rows="4" placeholder="Full Address" required></textarea>
-
-            <button type="button" class="btn-whatsapp" onclick="sendOrder()">
-                Confirm Order ➔
-            </button>
+            <textarea id="addr" placeholder="Full Address" required></textarea>
+            <button type="button" class="btn-whatsapp" onclick="sendToWA()">Send Order to WhatsApp</button>
         </form>
     </div>
 </div>
 
-<div class="footer">
-    <p>Handmade with Love by Mizbah | +91 9103803607</p>
-</div>
-
 <script>
-    function sendOrder() {
+    function sendToWA() {
         const phone = "919103803607";
-        const name = document.getElementById('cust_name').value;
-        const prod = document.getElementById('cust_product').value;
-        const addr = document.getElementById('cust_address').value;
-
-        if(!name || !addr) { alert("Please fill details!"); return; }
-
-        const text = `*NEW ORDER*%0A%0A*Name:* ${name}%0A*Product:* ${prod}%0A*Address:* ${addr}%0A%0A_I accept No Exchange/Return policy._`;
-        window.open(`https://wa.me/${phone}?text=${text}`, '_blank');
+        const msg = `Order: ${document.getElementById('prod').value}%0AName: ${document.getElementById('name').value}%0AAddress: ${document.getElementById('addr').value}`;
+        window.open(`https://wa.me/${phone}?text=${msg}`, '_blank');
     }
 </script>
 
